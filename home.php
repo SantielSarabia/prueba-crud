@@ -21,7 +21,7 @@
                                 <textarea id="Tareas-Descripcion" rows="3" class="form-control" placeholder="Descripcion"></textarea>
                             </div>
                             <!--Boton que enviar la informacion del formulario a la base de datos-->
-                            <button class="btn btn-outline-primary" class="btn-save">Guardar</button>
+                            <button class="btn btn-outline-primary" id="btn-save" class="btn-save">Guardar</button>
                         </form>
                     </div>
                 </div>
