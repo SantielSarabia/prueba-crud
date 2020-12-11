@@ -65,11 +65,11 @@ window.addEventListener("DOMContentLoaded", async (e) => {
                         const tarea = doc.data();
                        
                         taskForm["Tareas-title"].value = tarea.title;
-                        taskForm["Tareas-description"].value = tarea.description;
+                        taskForm["Tareas-Descripcion"].value = tarea.description;
                         
-                        /*EditarEstatus = true;
+                        EditarEstatus = true;
                         id = doc.id;
-                        taskForm["btn-save"].innerHTML = 'Actualizar';*/
+                        taskForm["btn-save"].innerHTML = 'Actualizar';
                     } catch (error) {
                         console.log(error);
                     }
