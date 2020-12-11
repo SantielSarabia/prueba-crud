@@ -61,14 +61,15 @@ window.addEventListener("DOMContentLoaded", async (e) => {
                 btn.addEventListener("click", async (e) => {
                     try {
                         const doc = await getTarea(e.target.dataset.id);
-                        const tarea = doc.data();
-                        console.log(tarea.title);
-                        taskForm["tarea-title"].value = tarea.title;
-                        taskForm["tarea-description"].value = tarea.description;
                         
-                        EditarEstatus = true;
+                        const tarea = doc.data();
+                       
+                        taskForm["Tareas-title"].value = tarea.title;
+                        taskForm["Tareas-description"].value = tarea.description;
+                        
+                        /*EditarEstatus = true;
                         id = doc.id;
-                        taskForm["btn-save"].innerHTML = 'Actualizar';
+                        taskForm["btn-save"].innerHTML = 'Actualizar';*/
                     } catch (error) {
                         console.log(error);
                     }
